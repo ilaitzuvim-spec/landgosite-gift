@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>אוצר המיני סייט במתנה | LANDGOSITE</title>
+<meta name="description" content="יותר מ-60 תבניות מעוצבות לכרטיסי ביקור דיגיטליים עם גלריית תמונות. במתנה לבעלי עסקים.">
+<link rel="preload" href="fonts/heebo-hebrew-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root{
+    --lg-navy:#0b2a6b; --lg-blue:#1565c0; --lg-teal:#14a8b5; --lg-sky:#4fc3f7; --lg-gold:#e3b341;
+    --lg-bg:#060b18; --lg-soft:#0b1326; --lg-surface:#0f1830;
+    --ink:#f2f6ff; --lg-text:#e3eafa; --lg-muted:#93a3c4; --lg-line:#94aad22e;
+    --lg-grad:linear-gradient(135deg,var(--lg-blue),var(--lg-teal));
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:Heebo,system-ui,sans-serif;background:var(--lg-bg);color:var(--lg-text);
+    line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    background-image:
+      radial-gradient(900px 500px at 50% -10%,#1565c033,transparent 70%),
+      radial-gradient(600px 400px at 100% 60%,#14a8b51f,transparent 70%);
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+  a{color:inherit}
+
+  /* header */
+  header{padding:22px 0}
+  header .wrap{display:flex;justify-content:center}
+  .logo{height:38px;width:auto;display:block}
+
+  /* hero */
+  .hero{padding:10px 0 56px}
+  .hero .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .hero .text{text-align:center}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:999px;
+    background:#e3b3411a;border:1px solid #e3b34155;color:var(--lg-gold);font-weight:700;font-size:.95rem;margin-bottom:18px
+  }
+  h1{color:var(--ink);font-weight:800;font-size:clamp(1.75rem,3.8vw,2.8rem);line-height:1.2;letter-spacing:-.5px;margin-bottom:18px}
+  h1 .num{background:var(--lg-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{font-size:1.15rem;color:var(--lg-text);margin-bottom:12px}
+  .lead strong{color:var(--ink)}
+  .gift{color:var(--lg-sky);font-weight:700;font-size:1.1rem;margin-bottom:28px}
+
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:10px;
+    background:var(--lg-grad);color:#fff;text-decoration:none;font-weight:800;font-size:1.15rem;
+    padding:17px 34px;border-radius:999px;box-shadow:0 10px 30px -8px #14a8b580;
+    transition:transform .2s,box-shadow .2s;min-height:56px
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px -8px #14a8b5a0}
+  .btn:focus-visible{outline:3px solid var(--lg-sky);outline-offset:3px}
+  .btn svg{width:20px;height:20px;transform:scaleX(-1)}
+  .micro{margin-top:12px;font-size:.92rem;color:var(--lg-muted)}
+
+  .visual{position:relative;padding-bottom:40px}
+  .visual img{
+    position:relative;z-index:1;width:100%;height:auto;display:block;
+    filter:drop-shadow(0 24px 40px #0000008c) drop-shadow(0 0 30px #4fc3f740);
+    animation:float 5.5s ease-in-out infinite
+  }
+  .visual .glow{
+    position:absolute;left:18%;right:18%;bottom:6px;height:56px;z-index:0;border-radius:50%;
+    background:radial-gradient(closest-side,#4fc3f773,transparent);
+    animation:glow 5.5s ease-in-out infinite
+  }
+  @keyframes float{0%,100%{transform:translateY(0) rotate(-.6deg)}50%{transform:translateY(-16px) rotate(.6deg)}}
+  @keyframes glow{0%,100%{opacity:.9;transform:scaleX(1)}50%{opacity:.55;transform:scaleX(.82)}}
+
+  /* features */
+  .feats{padding:24px 0 72px}
+  .feats ul{list-style:none;display:flex;flex-direction:column;gap:24px;max-width:880px;margin:0 auto}
+  .feats li{
+    display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:0;overflow:hidden;
+    background:linear-gradient(160deg,var(--lg-surface),var(--lg-soft));border:1px solid var(--lg-line);border-radius:28px;
+  }
+  .feats li:nth-child(even) .f-img{order:2}
+  .f-img{position:relative;overflow:hidden;aspect-ratio:610/422;height:100%}
+  .f-img img{width:100%;height:100%;object-fit:cover;display:block}
+  .f-img{-webkit-mask-image:linear-gradient(to left,#000 62%,transparent);mask-image:linear-gradient(to left,#000 62%,transparent)}
+  .feats li:nth-child(even) .f-img{-webkit-mask-image:linear-gradient(to right,#000 62%,transparent);mask-image:linear-gradient(to right,#000 62%,transparent)}
+  .f-txt{padding:28px 34px}
+  .feats h3{color:var(--ink);font-size:clamp(1.4rem,2.6vw,1.75rem);font-weight:800;line-height:1.25;margin-bottom:10px}
+  .feats p{color:var(--lg-muted);font-size:1.08rem}
+
+  /* scroll reveal */
+  .js .reveal{opacity:0;transform:translateY(48px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+  .js .reveal.in{opacity:1;transform:none}
+  .js .reveal .f-img img{transform:scale(1.12);transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+  .js .reveal.in .f-img img{transform:scale(1)}
+  .js .reveal .f-txt > *{opacity:0;transform:translateX(-24px);transition:opacity .6s ease,transform .6s ease}
+  .js .reveal.in .f-txt > *{opacity:1;transform:none}
+  .js .reveal.in .f-txt > :nth-child(1){transition-delay:.25s}
+  .js .reveal.in .f-txt > :nth-child(2){transition-delay:.38s}
+
+  /* about: iPad scroll-tilt */
+  .about{padding:80px 0 96px;background:#fff;margin-bottom:72px}
+  .tilt-wrap{perspective:1600px;text-align:center}
+  .tilt-head{max-width:640px;margin:0 auto;will-change:transform;transform-origin:center bottom;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+  .about-logo{width:min(260px,64%);height:auto;display:block;margin:0 auto 18px}
+  .tilt-head h2{
+    font-size:clamp(1.7rem,4vw,2.6rem);font-weight:800;line-height:1.2;letter-spacing:-.01em;
+    background:linear-gradient(110deg,#0b2a6b,#1565c0 45%,#0e8c97);-webkit-background-clip:text;background-clip:text;color:transparent
+  }
+  .tilt-card{
+    max-width:780px;margin:40px auto 0;padding:18px;border-radius:40px;position:relative;
+    background:linear-gradient(155deg,#4a4a4d 0%,#201f22 100%);
+    box-shadow:0 60px 100px -30px #0b2a6b80,inset 0 1px 1px #ffffff26;
+    transform-origin:center bottom;will-change:transform;transition:transform .35s cubic-bezier(.2,.7,.2,1)
+  }
+  .tilt-card::before{
+    content:"";position:absolute;top:6px;left:50%;transform:translateX(-50%);
+    width:8px;height:8px;border-radius:50%;background:#0a0a0a;box-shadow:inset 0 0 2px #ffffff33
+  }
+  .tilt-screen{background:#000;border-radius:26px;padding:52px 56px 44px;border:1px solid #ffffff0f}
+  .tilt-screen p{color:#a1a1a6;margin-bottom:14px;font-size:1.05rem}
+  .tilt-screen p:last-child{margin-bottom:0}
+  .tilt-screen .illum{
+    background:linear-gradient(110deg,#0071e3 0%,#5ec9ff 25%,#14a8b5 50%,#5ec9ff 75%,#0071e3 100%);
+    background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
+    font-weight:700;animation:shine 5s linear infinite;
+    filter:drop-shadow(0 0 14px #0071e373) drop-shadow(0 0 22px #14a8b54d)
+  }
+  .tilt-screen .sub{font-size:1.2rem;line-height:1.55;margin-bottom:22px}
+  .tilt-screen .punch{font-size:clamp(1.25rem,2.6vw,1.5rem);line-height:1.5;margin-top:24px}
+  @keyframes shine{from{background-position:0% 50%}to{background-position:150% 50%}}
+  /* final cta */
+  .final{padding:0 0 72px;text-align:center}
+  .final h2{color:var(--ink);font-size:clamp(1.5rem,3.4vw,2.1rem);font-weight:800;margin-bottom:24px;line-height:1.3}
+  .final p{color:var(--lg-muted);margin-bottom:24px}
+
+  footer{border-top:1px solid var(--lg-line);padding:24px 0 28px;text-align:center;color:var(--lg-muted);font-size:.9rem}
+  .legal{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin-bottom:10px}
+  .legal a{color:var(--lg-text);text-decoration:none;padding:6px 2px}
+  .legal a:hover{color:var(--lg-sky);text-decoration:underline}
+  a:focus-visible{outline:3px solid var(--lg-sky);outline-offset:3px;border-radius:4px}
+  .skip{position:absolute;top:-60px;right:16px;z-index:10;background:var(--lg-sky);color:#04101f;font-weight:700;
+    padding:10px 16px;border-radius:10px;text-decoration:none;transition:top .2s}
+  .skip:focus{top:12px}
+
+  /* mobile */
+  @media (max-width:860px){
+    .hero .wrap{grid-template-columns:1fr;gap:28px;text-align:center}
+    .hero .visual{order:-1;max-width:460px;margin:0 auto}
+    .feats li,.feats li:nth-child(even){grid-template-columns:1fr}
+    .feats li:nth-child(even) .f-img{order:0}
+    .f-img{height:auto}
+    .f-img,.feats li:nth-child(even) .f-img{-webkit-mask-image:linear-gradient(to bottom,#000 72%,transparent);mask-image:linear-gradient(to bottom,#000 72%,transparent)}
+    .f-txt{padding:22px 22px 28px;text-align:center}
+    .about{padding:56px 0 64px;margin-bottom:56px}
+    .tilt-card{padding:12px;border-radius:30px;margin-top:32px}
+    .tilt-screen{padding:36px 22px 32px;border-radius:20px}
+    .tilt-screen p{font-size:1rem}
+  }
+  @media (max-width:480px){
+    .wrap{padding:0 16px}
+    .logo{height:30px}
+    .btn{width:100%;padding:16px 14px;font-size:1.02rem;gap:8px}
+    .lead{font-size:1.05rem}
+  }
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}.js .reveal,.js .reveal *{opacity:1!important;transform:none!important}}
+</style>
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">דילוג לתוכן הראשי</a>
+
+<header>
+  <div class="wrap">
+    <img class="logo" src="assets/logo-white.png" alt="LANDGOSITE" width="1000" height="243">
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <div class="text">
+        <h1>כרטיס ביקור דיגיטלי עם גלריית עבודות, מעל <span class="num">60</span> עיצובים לבחירה, ובחינם!</h1>
+        <p class="lead">כרטיס ביקור דיגיטלי עם <strong>גלריית תמונות</strong>, כפתורי חיוג, וואטסאפ ומייל. בוחרים תבנית, ממלאים פרטים, ומקבלים קישור אישי לשתף עם לקוחות.</p>
+        <p class="gift">בלי עלות. בלי ידע טכני. מוכן תוך דקות.</p>
+        <a class="btn" href="https://minisite.landgosite.com/">
+          אני רוצה כרטיס ביקור שמביא לקוחות
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <p class="micro">הרשמה קצרה, ומתחילים לעצב</p>
+      </div>
+      <div class="visual">
+        <span class="glow" aria-hidden="true"></span>
+        <img src="assets/treasure.webp" alt="אוצר המיני סייט: ארגז מלא בתבניות של כרטיסי ביקור דיגיטליים. כרטיס ביקור דיגיטלי עם גלריית עבודות, מעל 60 עיצובים לבחירה, ובחינם!" width="1000" height="914">
+      </div>
+    </div>
+  </section>
+
+  <section class="feats" aria-label="מה מקבלים">
+    <div class="wrap">
+      <ul>
+        <li class="reveal">
+          <div class="f-img"><img src="assets/feat-templates.webp" alt="מגוון תבניות לכרטיסי ביקור דיגיטליים, עם תווית יותר מ־60 תבניות" width="610" height="422" loading="lazy"></div>
+          <div class="f-txt">
+            <h3>יותר מ־60 תבניות</h3>
+            <p>לכל תחום: יופי, אוכל, טיפול, כושר, עיצוב ועוד.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="f-img"><img src="assets/feat-gallery.webp" alt="מסך בחירת עיצוב במחשב עם כרטיסים וגלריות תמונות" width="610" height="422" loading="lazy"></div>
+          <div class="f-txt">
+            <h3>גלריית תמונות</h3>
+            <p>מציגים עבודות, מוצרים או את העסק עצמו.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="f-img"><img src="assets/feat-mobile.webp" alt="כרטיס דיגיטלי בטלפון עם סמלי וואטסאפ, אינסטגרם, קישור וקוד QR" width="610" height="422" loading="lazy"></div>
+          <div class="f-txt">
+            <h3>מושלם בנייד</h3>
+            <p>קישור אחד ששולחים בוואטסאפ, שמים בביו או מדפיסים כקוד QR.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="about" aria-labelledby="about-title">
+    <div class="wrap tilt-wrap" id="aboutTilt">
+      <div class="tilt-head" id="aboutHead">
+        <img class="about-logo" src="assets/logo-navy.png" alt="LANDGOSITE" width="1000" height="243" loading="lazy">
+        <h2 id="about-title">נעים להכיר,<br>אנחנו LANDGOSITE</h2>
+      </div>
+      <div class="tilt-card" id="aboutCard">
+        <div class="tilt-screen">
+          <p class="illum sub">לא רק מעצבים דפי נחיתה. אנחנו הופכים את המסר שלכם לחוויה שגורמת ללקוחות לרצות להישאר.</p>
+          <p>אנחנו מאמינים שדף נחיתה יפה הוא רק ההתחלה.</p>
+          <p>כי מה שווה עיצוב מרשים, אם הלקוח נכנס לדף ולא מבין למה דווקא כדאי לו לבחור בכם?</p>
+          <p>ב־LANDGOSITE אנחנו משלבים עיצוב מקצועי עם קופירייטינג מדויק ומשכנע, שמדבר ישירות ללקוחות שלכם.</p>
+          <p>אנחנו לומדים להכיר את העסק, מבינים מה מיוחד בו, ובונים דף שמציג את הערך שלכם בצורה ברורה, מושכת ומעוררת אמון.</p>
+          <p>המטרה שלנו פשוטה: לא רק שיגידו ״וואו, איזה דף יפה!״ אלא שגם ירצו להשאיר פרטים, ליצור קשר ולהפוך ללקוחות שלכם.</p>
+          <p class="illum punch">כי דף נחיתה טוב לא רק נראה טוב.<br>הוא יודע גם למכור.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap reveal">
+      <h2>האוצר מחכה לך. בוחרים תבנית ומתחילים.</h2>
+      <a class="btn" href="https://minisite.landgosite.com/">
+        אני רוצה את המתנה
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <nav class="legal" aria-label="מידע משפטי">
+      <a href="https://minisite.landgosite.com/legal.html#terms">תנאי שימוש</a>
+      <a href="https://minisite.landgosite.com/legal.html#privacy">מדיניות פרטיות</a>
+      <a href="accessibility.html">הצהרת נגישות</a>
+    </nav>
+    <div>© LANDGOSITE · LAND&amp;GO</div>
+  </div>
+</footer>
+
+<script>
+  (function(){
+    var els=document.querySelectorAll('.reveal');
+    if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})
+    },{threshold:.18,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+  })();
+
+  /* iPad scroll-tilt: the card straightens out as you scroll, like the LANDGOSITE home page */
+  (function(){
+    var wrap=document.getElementById('aboutTilt'),head=document.getElementById('aboutHead'),card=document.getElementById('aboutCard');
+    if(!wrap||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var s0=window.innerWidth<=768?.94:.92;
+    function update(){
+      var r=wrap.getBoundingClientRect(),vh=window.innerHeight,start=vh*.85,end=vh*.25;
+      var p=Math.min(1,Math.max(0,(start-r.top)/(start-end))),rx=18*(1-p);
+      head.style.transform='perspective(1600px) translate3d(0,'+(-30*p)+'px,0) rotateX('+rx+'deg)';
+      card.style.transform='perspective(1600px) rotateX('+rx+'deg) scale('+(s0+(1-s0)*p)+')';
+    }
+    function onScroll(){update()}
+    update();
+    window.addEventListener('scroll',onScroll,{passive:true});
+    window.addEventListener('resize',function(){s0=window.innerWidth<=768?.94:.92;onScroll()});
+  })();
+</script>
+</body>
+</html>
